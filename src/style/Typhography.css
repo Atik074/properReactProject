@@ -1,0 +1,9 @@
+
+@layer base{
+    h1{
+        @apply text-6xl;
+    }
+    p{
+        @apply text-3xl;
+    }
+}

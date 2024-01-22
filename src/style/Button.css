@@ -1,0 +1,24 @@
+
+@layer components{
+    .btn-solid{
+        @apply px-2 py-2 ;
+        @apply font-semibold text-white rounded-md;
+        @apply bg-purple-400 hover:bg-purple-500 focus:bg-purple-500;
+    }
+    .btn-outline{
+        @apply px-2 py-2 ;
+        @apply font-semibold text-purple-500 rounded-md;
+        @apply bg-purple-400 bg-opacity-10 hover:bg-purple-500 focus:bg-purple-500 hover:bg-opacity-20;
+        @apply  border border-purple-500;
+        @apply transition-all ;
+         
+    }
+    .btn-ghost{
+        @apply px-2 py-2 ;
+        @apply font-semibold text-purple-500 rounded-md;
+        @apply bg-purple-400 bg-opacity-10 hover:bg-purple-500 focus:bg-purple-500 hover:bg-opacity-20;
+        @apply  transition-all;
+         
+    }
+
+}
