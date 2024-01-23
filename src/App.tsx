@@ -11,7 +11,7 @@ function App() {
 
     
         <div>
-        <Button className="btn   p-4 m-16 text-2xl rounded-lg w-[500px]"  variant='outline'></Button>
+        <Button className="btn   p-4 m-16 text-2xl rounded-lg w-[500px]"  variant='outline' onClick></Button>
       
         </div>
 
