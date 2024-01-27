@@ -1,5 +1,5 @@
 
-import { ButtonHTMLAttributes, DetailedHTMLProps, forwardRef } from 'react';
+import { ButtonHTMLAttributes,  DetailedHTMLProps, forwardRef } from 'react';
 import cn from '../utils/cn';
 
 type TRef = HTMLButtonElement
@@ -10,8 +10,7 @@ type TVariant = 'ghost' | 'btn' | 'outline'
 type TButtonOptions = {
     variant : TVariant;
 }
-
-const Button = forwardRef<TRef , TButton>(({className, variant , ...rest}, ref) => {
+const Button = forwardRef<TRef , TButton>(({className,children ,variant , ...rest}, ref) => {
 
     const getVariant = (variant:TVariant)=>{
         switch (variant) {
@@ -29,7 +28,10 @@ const Button = forwardRef<TRef , TButton>(({className, variant , ...rest}, ref) 
 
     return <button {...rest} ref={ref} className={cn(
         getVariant(variant) ,className
-    )}>Click</button>
+    )}>
+         {children}
+        </button>
 });
 
 export default Button;
+
